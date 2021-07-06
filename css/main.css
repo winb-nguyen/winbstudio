@@ -1,0 +1,541 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+  font-family: montr;
+  src: url("../fonts/Montserrat-Regular.ttf");
+}
+@font-face {
+  font-family: montb;
+  src: url("../fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+  font-family: monti;
+  src: url("../fonts/Montserrat-Italic.ttf");
+}
+@font-face {
+  font-family: baronnn;
+  src: url("../fonts/BaronNeue-Bold.otf");
+}
+.container
+{
+    width: 100%;
+    height: auto;
+    background: #ECE9E6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #FFFFFF, #ECE9E6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #FFFFFF, #ECE9E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0 auto;
+}
+
+header
+{
+    width: 100%;
+    height: auto;
+}
+
+.logo
+{
+    width: 30%;
+    height: 100px;
+    float: left;
+    
+}
+
+nav
+{
+    width: 70%;
+    height: 100px;
+    float: right;
+    
+}
+
+nav ul
+{
+    list-style: none;
+    font-family: montb;
+}
+
+nav ul li
+{
+    float: left;
+    padding: 35px;
+    position: relative;
+    
+    
+}
+nav ul a
+{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+}
+
+nav ul li:hover a
+{
+    color: black;
+}
+
+nav ul li ul
+{
+    position: absolute;
+    top: 80px;
+    left: 0;
+    visibility: hidden;
+    transition: all 2s;
+    
+    
+}
+nav ul li ul li
+{
+    z-index: 4;
+    width: 140px;
+    left: 0;
+    height: 10px;
+    top: 10px;
+    bottom: 10px;
+    transition: all 0.2s;
+    background-color: rgba(238, 238, 228, 0.8);
+}
+
+nav ul li ul li:hover
+{
+    background-color: #fff;
+}
+
+nav ul li:hover ul li
+{
+    visibility: visible;
+}
+
+
+
+
+/*COOL link*/
+
+
+li {
+    margin-bottom: 10px;
+}
+
+
+
+.cool-link {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    //transition: width .3s;
+}
+
+.slideee
+{
+    width: 100%;
+    height: 700px;
+    position: center;
+    z-index: 1;
+    
+}
+
+.aboutus
+{
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+   
+}
+
+.abt_text1
+{
+    width: 40%;
+    height: 500px;
+    float: left;
+    padding: 40px;
+    box-sizing: border-box;
+    font-family: montr;
+}
+.winb
+{
+    font-family: baronnn;
+    font-size: 23px;
+    animation: fadeInLeft 1s 2s infinite;
+}
+.abt_text2
+{
+    width: 60%;
+    height: 500px;
+    float: right;
+    padding-top: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+.button_slide {
+  color: black;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: montb;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #000000;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+
+
+.slide_right:hover {
+  box-shadow: inset 400px 0 0 0 #000000;
+    color: white;
+}
+
+#outer {
+  width: 364px;
+  margin: 50px auto 0 auto;
+  text-align: center;
+}
+
+.category
+{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+    font-size: 30px;
+    font-family: montb;
+}
+
+.ngoaicanh
+{
+    width: 100%;
+    height: auto;
+}
+
+.ngoaicanh_row
+{
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    
+    
+    
+}
+.ngoaicanh_frame
+{
+    width: 390px;
+    height: 280px;
+    float: left;
+    margin-left: 20px;
+    margin-right: 20px;
+    box-sizing: border-box;
+    transition: all 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;s
+}
+
+.ngoaicanh_frame img
+{
+    transform: scale(1);
+}
+
+.ngoaicanh_frame:hover
+{
+    transform: scale(1.1);
+    opacity: 0.3;
+}
+
+/*STUDIO*/
+
+.studio
+{
+    width: 100%;
+    height: 450px;
+    justify-content: center;
+    display: flex;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.item:hover
+{
+opacity: 0.2;
+    transition: all 0.2s;
+}
+
+/*Cam kết*/
+
+.camket
+{
+    width: 100%;
+    height: 500px;
+
+}
+
+}
+.tilesWrap {
+	
+	
+	list-style: none;
+	text-align: center;
+    justify-content: center;
+    display: flex;
+    
+    
+}
+.tilesWrap li {
+	display: inline-block;
+	width: 22%;
+	height: 450px;
+	padding: 80px 20px 40px;
+	position: relative;
+	vertical-align: top;
+	margin-left: 70px;
+    margin-right: 70px;
+	font-family: montr;
+	min-height: 25vh;
+	background: #eee;
+	text-align: left;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-sizing: border-box;
+    
+    
+}
+.tilesWrap li h2 {
+	font-size: 114px;
+	margin: 0;
+	position: absolute;
+	opacity: 0.2;
+	top: 50px;
+	right: 10px;
+	transition: all 0.3s ease-in-out;
+    
+}
+.tilesWrap li h3 {
+	font-size: 20px;
+	color: #000;
+	
+}
+.tilesWrap li p {
+	font-size: 16px;
+	line-height: 18px;
+	color: #red;
+	margin-top: 5px;
+}
+.tilesWrap li button {
+	background: transparent;
+	border: 1px solid #b7b7b7;
+	padding: 10px 20px;
+	color: #000;
+	border-radius: 3px;
+	position: relative;
+	transition: all 0.3s ease-in-out;
+	transform: translateY(-40px);
+	opacity: 0;
+	cursor: pointer;
+	overflow: hidden;
+}
+.tilesWrap li button:before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 120%;
+	background: #000;
+	top: 0;
+	opacity: 0;
+	left: -140px;
+	border-radius: 0 20px 20px 0;
+	z-index: -1;
+	transition: all 0.3s ease-in-out;
+	
+}
+.tilesWrap li:hover button {
+	transform: translateY(5px);
+	opacity: 1;
+}
+.tilesWrap li button:hover {
+	color: #fff;
+}
+.tilesWrap li button:hover:before {
+	left: 0;
+	opacity: 1;
+}
+.tilesWrap li:hover h2 {
+	top: 0px;
+	opacity: 0.6;
+}
+
+.tilesWrap li:before {
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	z-index: -1;
+	transform: skew(2deg, 2deg);
+}
+.tilesWrap li:after {
+	content: '';
+	position: absolute;
+	width: 40%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: rgba(255, 255, 255, 0.02);
+}
+
+/*BÁO GIÁ*/
+.baogia
+{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    padding-top: 50px;
+    box-sizing: border-box;
+    background-image: url("../images/backmail.jpg");
+    background-repeat: no-repeat;
+     background-size: cover;
+    margin-top: 130px;
+    margin-bottom: 130px;
+}
+.textbaogia
+{
+    font-family: montb;
+    font-size: 40px;
+}
+.inputtrong
+{
+    width: 800px;
+    height: 80px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    
+}
+
+
+/*NUMBER*/
+.nber
+{
+    width: 100%;
+    height: 320px;
+}
+/*CONTACT*/
+.ct
+{
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    display: flex;
+}
+
+.ct_tuvan
+{
+    width: 60%;
+    height: 500px;
+    float: left;
+    padding: 50px;
+    box-sizing: border-box;
+    font-family: montr;
+    color: #7C7878;
+    
+}
+
+input
+{
+    height: 45px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 2px solid #eee;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 5px;
+}
+
+
+
+textarea
+{
+    height: 170px;
+    padding-left: 20px;
+    padding-top: 20px;
+    border: 2px solid #eee;
+    box-sizing: border-box;
+    outline: none;
+    border-radius: 5px;
+    
+}
+
+select
+{
+    width: 180px;
+    height: 25px;
+    border: 2px solid #eee;
+    box-sizing: border-box;
+    outline: none;
+    text-align-last: center;
+    border-radius: 5px;
+    
+}
+
+options li
+{
+    padding:0 6px;
+    margin:0 0;
+    padding:0 10px;
+}
+
+.ct_lienhe
+{
+    width: 40%;
+    height: 500px;
+    float: right;
+    padding-left: 50px;
+    padding-top: 50px;
+    box-sizing: border-box;
+    font-family: montb;
+    border: 40px solid #f7f7f7;
+}
+
+footer
+{
+    width: 100%;
+    height: 100px;
+    background: #232526;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    color:white;
+    text-align: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+   
+}
+
+.lienhe_tit
+{
+    font-family: montb;
+    font-size: 30px;
+}
+
+
+
+
